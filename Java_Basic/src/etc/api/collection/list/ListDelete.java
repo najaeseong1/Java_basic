@@ -20,15 +20,30 @@ public class ListDelete {
 		/*
 		 - 입력받은 이름을 리스트 내에서 삭제하세요.
 		 삭제 후 결과도 출력하세요.
-		 - 없으면 없는 이름이라고 출력해주세요.
+		 - 없으면 없는 이름이라고 출력해 주세요.
 		 */
-		
+
 		if(kakao.contains(name)) {
 			kakao.remove(name);
 			System.out.println("삭제 후 정보: " + kakao);
-		}else {;
-		System.out.println("없는데요~");
+		} else {
+			System.out.println("없는데요~");
 		}
+		
 		sc.close();
+		
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

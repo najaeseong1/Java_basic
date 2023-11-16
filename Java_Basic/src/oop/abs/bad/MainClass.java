@@ -1,7 +1,7 @@
 package oop.abs.bad;
 
 public class MainClass {
-
+	
 	public static void main(String[] args) {
 		
 		HeadStore store = new SeoulStore();
@@ -9,5 +9,7 @@ public class MainClass {
 		store.orderBanana();
 		store.orderGrape();
 		
+		
 	}
+
 }

@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class WhileExample3 {
 
 	public static void main(String[] args) {
-
+		
 		/*
 		 - 정수 1개를 입력받아서 해당 정수가 소수(prime number)
-		 인지를 판별하시면 됩니다.
+		  인지를 판별하시면 됩니다.
 		 */
 		
 		Scanner sc = new Scanner(System.in);
@@ -24,24 +24,43 @@ public class WhileExample3 {
 			}
 			i++;
 		}
+		
 		if(count == 2) {
 			System.out.println(num + "은(는) 소수입니다.");
 		} else {
 			System.out.println(num + "은(는) 소수가 아닙니다.");
 		}
 		
-		System.out.println("=====================================");
+		System.out.println("============================================");
 		
-		int j = 2; // begin
+		int j = 2; //begin
 		
-		while(num % j != 0) { // end
-			j++; // step
+		while(num % j != 0) { //end
+			j++; //step
 		}
-		System.out.printf("%d은(는) %s\n", num, (num == j ? "소수입니다." : "소수가 아닙니다."));
 		
+		System.out.printf("%d은(는) %s.\n", num, (num == j ? "소수입니다" : "소수가 아닙니다"));
 		
 		sc.close();
 		
+		
+		
+		
+
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

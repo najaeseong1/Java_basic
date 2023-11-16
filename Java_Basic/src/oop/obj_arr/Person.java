@@ -1,11 +1,11 @@
 package oop.obj_arr;
 
 public class Person {
-
+	
 	/*
-    - alt + shift + s -> generate getters and setters
-    - alt + shift + s -> generate constructor using fields
-    */
+	 - alt + shift + s -> generate getters and setters
+	 - alt + shift + s -> generate constructor using fields
+	 */
 	
 	private String name;
 	private int age;
@@ -13,14 +13,12 @@ public class Person {
 	
 	public Person() {}
 	
-	
 	public Person(String name, int age, String gender) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 	}
-
 
 	public String getName() {
 		return name;
@@ -47,4 +45,14 @@ public class Person {
 	}
 	
 	
+
 }
+
+
+
+
+
+
+
+
+

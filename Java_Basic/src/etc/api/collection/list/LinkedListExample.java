@@ -1,15 +1,14 @@
 package etc.api.collection.list;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class LinkedListExample {
 
 	public static void main(String[] args) {
 		
-		LinkedList<String> list =  new LinkedList<>();
+		LinkedList<String> list = new LinkedList<>();
 		
-		// 추가
+		//추가
 		list.add("홍길동");
 		list.add("김철수");
 		list.add("박영희");
@@ -25,21 +24,21 @@ public class LinkedListExample {
 		list.remove(0);
 		System.out.println(list);
 		
-		// LIFO -> last in first out -> stack
-		// push, pop, peek
-		list.push("김뽀삐"); // 앞에서부터 추가
+		//LIFO -> last in first out -> stack
+		//push, pop, peek
+		list.push("김뽀삐"); //앞에서부터 추가
 		System.out.println(list);
 		
-		// 삭제하면서 데이터를 읽기
+		//삭제하면서 데이터를 읽기
 		System.out.println(list.pop());
 		System.out.println(list);
 		
-		// 삭제하지 않으면서 읽기
+		//삭제하지 않으면서 읽기
 		System.out.println(list.peek());
 		System.out.println(list);
 		
-		// FIFO -> first in first out -> Queue
-		// offer, poll, peek
+		//FIFO -> first in first out -> Queue
+		//offer, poll, peek
 		list.offer("a");
 		list.offer("b");
 		list.offer("c");
@@ -50,5 +49,25 @@ public class LinkedListExample {
 		
 		System.out.println(list.peek());
 		System.out.println(list);
+		
+		
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 package oop.inherit.bad;
 
 public class Mage {
-
+	
 	String name;
 	int level;
 	int atk;
@@ -16,4 +16,5 @@ public class Mage {
 		System.out.println("# 체력: " + hp);
 		System.out.println("# 정신력: " + mana);
 	}
+
 }

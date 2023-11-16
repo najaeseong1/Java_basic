@@ -22,13 +22,12 @@ package basic.method;
 4. 반환된 값은 변수에 담아서 저장하거나, 출력하는 등 다양하게 활용합니다.
 */
 
-
 public class MethodExample1 {
 
-	// 메서드의 선언! (static은 뒤에서 알려드릴게요. 지금은 없다고 생각하세요.)
-	static int calcTotal(int x){
+	//메서드의 선언! (static은 뒤에서 알려드릴게요. 지금은 없다고 생각하세요.)
+	static int calcTotal(int x) {
 		int total = 0;
-		for(int i = 1; i <= x; i++) {
+		for(int i=1; i<=x; i++) {
 			total += i;
 		}
 		return total;
@@ -37,14 +36,33 @@ public class MethodExample1 {
 	public static void main(String[] args) {
 		
 		int total = calcTotal(10); // int total = 55;
+		System.out.println(total);
 		
-		System.out.println("1 ~ 100까지의 누적합: " + calcTotal(100));
-		System.out.println("1 ~ 200까지의 누적합: " + calcTotal(200));
-		System.out.println("1 ~ 300까지의 누적합: " + calcTotal(300));
-		System.out.println("1 ~ 400까지의 누적합: " + calcTotal(400));
-		System.out.println("1 ~ 500까지의 누적합: " + calcTotal(500));
-		System.out.println("1 ~ 600까지의 누적합: " + calcTotal(600));
-		System.out.println("1 ~ 700까지의 누적합: " + calcTotal(700));
+		System.out.println("1~100까지의 누적합: " + calcTotal(100));
+		System.out.println("1~200까지의 누적합: " + calcTotal(200));
+		System.out.println("1~300까지의 누적합: " + calcTotal(300));
+		System.out.println("1~400까지의 누적합: " + calcTotal(400));
+		System.out.println("1~500까지의 누적합: " + calcTotal(500));
+		System.out.println("1~600까지의 누적합: " + calcTotal(600));
+		System.out.println("1~700까지의 누적합: " + calcTotal(700));
+		
+		
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

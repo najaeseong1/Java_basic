@@ -9,7 +9,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("진행하실 번호를 입력하세요");
-		System.out.println("1. 가입 2. 로그인 3. 정보수정 4. 탈퇴");
+		System.out.println("1. 가입  2. 로그인  3. 정보수정  4. 탈퇴");
 		System.out.print("> ");
 		int menu = sc.nextInt();
 		
@@ -28,5 +28,18 @@ public class MainClass {
 		}
 		
 		sc.close();
+
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+

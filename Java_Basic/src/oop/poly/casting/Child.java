@@ -1,8 +1,8 @@
 package oop.poly.casting;
 
 public class Child extends Parent {
-
-	public int n2; // 자식 고유의 필드
+	
+	public int n2; //자식 고유의 필드
 	
 	@Override
 	public void method2() {
@@ -12,4 +12,5 @@ public class Child extends Parent {
 	public void method3() {
 		System.out.println("자식 고유의 3번 메서드 호출!");
 	}
+
 }

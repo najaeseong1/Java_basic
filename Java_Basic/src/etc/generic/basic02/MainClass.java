@@ -8,5 +8,7 @@ public class MainClass {
 		String name = b.get(1);
 		b.put(10, "김메롱");
 		System.out.println(b);
+
 	}
+
 }

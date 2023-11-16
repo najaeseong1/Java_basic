@@ -8,7 +8,7 @@ public class Warrior {
 	int hp;
 	int rage;
 	
-	void characterInfo(){
+	void characterInfo() {
 		System.out.println("*** 캐릭터의 정보 ***");
 		System.out.println("# 아이디: " + name);
 		System.out.println("# 레벨: " + level);
@@ -16,4 +16,5 @@ public class Warrior {
 		System.out.println("# 체력: " + hp);
 		System.out.println("# 분노: " + rage);
 	}
+
 }

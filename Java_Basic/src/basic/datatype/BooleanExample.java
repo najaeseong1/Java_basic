@@ -3,8 +3,7 @@ package basic.datatype;
 public class BooleanExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		boolean b1 = true;
 		boolean b2 = false;
 		
@@ -13,6 +12,7 @@ public class BooleanExample {
 //		boolean b5 = 0; (x)
 //		boolean b6 = "논리형 타입"; (x)
 		
+
 	}
 
 }

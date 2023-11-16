@@ -14,6 +14,7 @@ class D extends B {}
 class E extends C {}
 
 public class Basic {
+	
 	A a = new A();
 	B b = new B();
 	C c = new C();
@@ -21,8 +22,11 @@ public class Basic {
 	E e = new E();
 	
 	/*
-	 * - 다형셩이란 자식 객체가 모든 부모의 타입을 가질 수 있다는 것을 의미합니다.
-	 * - 즉, 부모 타입 변수에 자식 객체의 주소값을 얼마든지 저장할 수 있다는 것을 의미합니다.
+	 - 다형성이란 자식 객체가 모든 부모의 타입을 가질 수 있다는 것을
+	  의미합니다.
+	  
+	 - 즉, 부모 타입 변수에 자식 객체의 주소값을 얼마든지 저장할 수 
+	  있다는 것을 의미합니다.
 	 */
 	
 	int i = 5;
@@ -33,25 +37,39 @@ public class Basic {
 	A v3 = new D();
 	A v4 = new E();
 	A v5 = b;
+	
 	B v6 = new D();
 	C v7 = new E();
 	
-	// 상속 관계가 없다면 다형성 적용이 불가능합니다.
-	// 즉, 다형셩은 무조건 상속 관계 하에서만 발생합니다.
+	//상속 관계가 없다면 다형성 적용이 불가능합니다.
+	//즉, 다형성은 무조건 상속 관계 하에서만 발생합니다.
 //	B v8 = new C(); (x)
 //	C v9 = new D(); (x)
 //	B v10 = new E(); (x)
-//	D v11 = new E();(x)
+//	D v11 = new E(); (x)
 	
-	// Object는 자바의 최상위 클래스입니다.
-	// 모든 클래스는 결굴 Object의 자식입니다.
-	// Object 타입의 변수에는 어떠한 객체도 들어올 수 있습니다.
+	//Object는 자바의 최상위 클래스입니다.
+	//모든 클래스는 결국 Object의 자식입니다.
+	//Object 타입의 변수에는 어떠한 객체도 들어올 수 있습니다.
 	Object o1 = new A();
 	Object o2 = new B();
 	Object o3 = new C();
 	Object o4 = new D();
 	Object o5 = new E();
 	Object o6 = new String("안녕하세요!");
-	Object o7 = new Basic();
+//	Object o7 = new Basic();
+	
+	
+	
 
 }
+
+
+
+
+
+
+
+
+
+

@@ -23,14 +23,14 @@ public class ThrowsExample {
     
     public static void main(String[] args) {
         
-        try {
-            greet(3);
-        } catch (Exception e) {
-            //printStackTrace() 메서드는 예외 발생 원인을 역추적하여
-            //예외가 어디에서 발생했는지, 그 이유는 무엇인지를
-            //메세지를 통해 개발자에게 전달하므로 자주 사용하는 메서드입니다.
-            e.printStackTrace();
-        }
+    	try {
+			greet(3);
+		} catch (Exception e) {
+			//printStackTrace() 메서드는 예외 발생 원인을 역추적하여
+			//예외가 어디에서 발생했는지, 그 이유는 무엇인지를
+			//메세지를 통해 개발자에게 전달하므로 자주 사용하는 메서드입니다.
+			e.printStackTrace();
+		}
         
         System.out.println("프로그램 정상 종료!");
 

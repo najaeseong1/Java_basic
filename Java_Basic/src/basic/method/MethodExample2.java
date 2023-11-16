@@ -22,40 +22,44 @@ package basic.method;
 */
 
 public class MethodExample2 {
-
-	// x부터 y까지의 누적합계를 구하는 메서드
-	static int calcRangeTotal(int start, int end){
+	
+	//x부터 y까지의 누적합계를 구하는 메서드
+	static int calcRangeTotal(int start, int end) {
 		int total = 0;
-		for(int i = start; i <= end; i++) {
+		for(int i=start; i<=end; i++) {
 			total += i;
 		}
 		return total;
 	}
 	
-	// 매개변수가 필요없는 경우
-	static String selectRandomFood(){
+	//매개변수가 필요없는 경우
+	static String selectRandomFood() {
 		double rn = Math.random();
 		if(rn > 0.66) {
 			return "치킨";
-		} else if(rn > 0.33){
+		} else if(rn > 0.33) {
 			return "족발";
 		} else {
 			return "삼겹살";
 		}
 	}
 	
-	// 정수 n개를 전달하면 그 정수들의 총 합을 리턴하는 메서드
+	//정수 n개를 전달하면 그 정수들의 총 합을 리턴하는 메서드
 	static int calcNumberTotal(int[] nums) {
 		int total = 0;
+		for(int i=0; i<nums.length; i++) {
+			total += nums[i];
+		}
+		/*
 		for(int n : nums) {
 			total += n;
 		}
+		*/
 		return total;
 	}
 	
-	// 가변인수(가변 파라미터)를 사용한 매개변수 작성.
-	// 콤마로 나열되어 들어오는 여려개의 값을 배열로 묶어서 내부로 전달합니다.
-	
+	//가변인수(가변 파라미터)를 사용한 매개변수 작성.
+	//콤마로 나열되어 들어오는 여러개의 값을 배열로 묶어서 내부로 전달합니다.
 	static int calcNumberTotal2(int... nums) {
 		int total = 0;
 		for(int n : nums) {
@@ -65,26 +69,33 @@ public class MethodExample2 {
 	}
 	
 	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
 		int result = calcRangeTotal(34, 96);
 		System.out.println(result);
 		
 		System.out.println("오늘 점심 뭐먹지???: " + selectRandomFood());
 		
-		int[] arr = {10, 30, 50, 70, 90, 110};
+		int[] arr = {10, 30, 50, 70, 90, 110, 130};
 		int sum = calcNumberTotal(arr);
 		System.out.println("누적합: " + sum);
 		
-		sum = calcNumberTotal(new int[] {1, 2, 3, 4, 5, 6, 7});
+		sum = calcNumberTotal(new int[] {1,2,3,4,5,6,7});
 		System.out.println("누적합: " + sum);
 		
-		// 가변 파라미터에 값을 보낼 때는 콤마로 쭉 나열하시거나
-		// 배열로 포장해서 보내도 됩니다.
-		sum = calcNumberTotal2(1, 2, 3, 4, 5, 6, 7);
+		//가변 파라미터에 값을 보낼 때는 콤마로 쭉 나열하시거나
+		//배열로 포장해서 보내도 됩니다.
+		sum = calcNumberTotal2(1,2,3,4,5,6,7);
 		System.out.println("누적합: " + sum);
-
+		
 	}
 
 }
+
+
+
+
+
+
+
